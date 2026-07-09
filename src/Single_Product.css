@@ -1,0 +1,179 @@
+/* SingleProduct.css */
+
+.single-product-page{
+  width:100%;
+  display:flex;
+  gap:40px;
+  padding:40px;
+  background:#ffffff;
+}
+
+/* LEFT SIDE */
+
+.left-image{
+  width:50%;
+  background:white;
+  border-radius:12px;
+  padding:20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-image img{
+  width:100%;
+  height:500px;
+  object-fit:contain;
+}
+
+/* RIGHT SIDE */
+
+.right-info{
+  width:50%;
+  background:white;
+  border-radius:12px;
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.right-info h1{
+  font-size:32px;
+  color:#111;
+}
+
+.right-info h2{
+  font-size:28px;
+  color:#00b894;
+}
+
+.right-info del{
+  color:gray;
+  font-size:18px;
+}
+
+.right-info p{
+  font-size:18px;
+  color:#444;
+}
+.cart_btn{
+  width:220px;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  background:#00c896;
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.cart_btn button:hover{
+  background:#00a67d;
+}
+.wish_btn{
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+  .single-product-page{
+    flex-direction:column;
+    padding:20px;
+  }
+
+  .left-image,
+  .right-info{
+    width:100%;
+  }
+
+  .left-image img{
+    height:300px;
+  }
+
+}
+.wishlist-icon{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  border:1px solid #ddd;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:24px;
+  cursor:pointer;
+  color:red;
+  margin-bottom:20px;
+}
+.product-title{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  */
+.cart-message{
+  position:fixed;
+  top:20px;
+  right:20px;
+  width:420px;
+  background:#edf9ef;
+  border:1px solid #b7e4c7;
+  border-radius:15px;
+  padding:20px;
+  display:flex;
+  align-items:flex-start;
+  gap:15px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  z-index:999;
+  animation:slideDown 0.3s ease;
+}
+
+.message-icon{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:#22c55e;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.cart-message h3{
+  margin:0;
+  color:#15803d;
+  font-size:24px;
+}
+
+.cart-message p{
+  margin-top:8px;
+  color:#555;
+  line-height:1.5;
+}
+
+.close-btn{
+  margin-left:auto;
+  border:none;
+  background:none;
+  font-size:25px;
+  cursor:pointer;
+  color:#888;
+}
+
+@keyframes slideDown{
+
+  from{
+      transform:translateY(-20px);
+      opacity:0;
+  }
+
+  to{
+      transform:translateY(0);
+      opacity:1;
+  }
+}

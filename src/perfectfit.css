@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.perfectfit{
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* HEADING */
+
+.heading{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.heading h2{
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.line{
+  flex: 1;
+  height: 1px;
+  background: #cfcfcf;
+}
+
+/* MAIN GRID */
+
+.layout{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+}
+
+/* LEFT BIG */
+
+.left1{
+  height: 340px;
+}
+
+.left1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* TOP RIGHT */
+
+.top-right{
+  height: 165px;
+}
+
+.top-right img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* RIGHT TALL */
+
+.right1{
+  grid-column: 2;
+  grid-row: 2;
+  height: 340px;
+  margin-top: -175px;
+}
+
+.right1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* BOTTOM 2 IMAGES */
+
+.bottom-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.small-card{
+  height: 165px;
+}
+
+.small-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}

@@ -1,0 +1,187 @@
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 16px;
+  width: 100%;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.nav-btn:hover {
+  background: #f5f5f5;
+  border-color: #bbb;
+}
+
+.cards-track {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+
+.brand-card {
+  flex: 1;
+  aspect-ratio: 5 / 3;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.brand-card:hover {
+  border-color: #bbb;
+  transform: translateY(-2px);
+}
+
+/* ── Goldstar ─────────────────────────────── */
+.logo-goldstar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo-goldstar .top-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-goldstar .brand-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #4a1b5e;
+  letter-spacing: 0.5px;
+}
+
+.logo-goldstar .sub {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  color: #888;
+  font-weight: 500;
+}
+
+/* ── Transmit ─────────────────────────────── */
+.logo-transmit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo-transmit .brand-name {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #c0392b;
+}
+
+/* ── Kidos ────────────────────────────────── */
+.logo-kidos {
+  font-size: 28px;
+  font-weight: 800;
+  font-style: italic;
+  font-family: Georgia, serif;
+}
+
+.logo-kidos .k { color: #e67e22; }
+.logo-kidos .i { color: #27ae60; }
+.logo-kidos .d { color: #e74c3c; }
+.logo-kidos .o { color: #2980b9; }
+.logo-kidos .s { color: #8e44ad; }
+
+/* ── ZigZag ───────────────────────────────── */
+.logo-zigzag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo-zigzag .top-row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo-zigzag .zig  { font-size: 16px; font-weight: 900; color: #27ae60; }
+.logo-zigzag .bolt { font-size: 13px; font-weight: 700; color: #f39c12; }
+.logo-zigzag .zag  { font-size: 16px; font-weight: 900; color: #e74c3c; }
+
+.logo-zigzag .sub {
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* ── Bausch & Lomb ────────────────────────── */
+.logo-bausch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo-bausch .triangle-wrap {
+  position: relative;
+  width: 80px;
+  height: 30px;
+}
+
+.logo-bausch .tri-dark {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 18px;
+  background: #1a3a6b;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.logo-bausch .tri-light {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 18px;
+  background: #00539b;
+}
+
+.logo-bausch .brand-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a3a6b;
+}
+
+/* ── Eyeclic ──────────────────────────────── */
+.logo-eyeclic {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-eyeclic .brand-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a2a6c;
+  letter-spacing: 1px;
+}

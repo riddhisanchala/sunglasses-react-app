@@ -1,0 +1,106 @@
+.wishlist-page{
+  padding:40px;
+  background:#f8f8f8;
+  min-height:100vh;
+}
+
+.wishlist-page h1{
+  margin-bottom:30px;
+}
+
+.wishlist-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.wishlist-card{
+  width:280px;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  padding:15px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.wishlist-card img{
+  width:100%;
+  height:250px;
+  object-fit:contain;
+}
+
+.wishlist-card h2{
+  font-size:22px;
+  margin-top:10px;
+}
+
+.wishlist-card p{
+  font-size:24px;
+  color:#00b894;
+  font-weight:bold;
+}
+
+.wishlist-card del{
+  color:gray;
+}
+
+.wishlist-card button{
+  width:100%;
+  margin-top:15px;
+  padding:12px;
+  border:none;
+  background:red;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.cart-message{
+    position:fixed;
+    top:120px;
+    right:30px;
+    background:white;
+    padding:18px 20px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    display:flex;
+    align-items:center;
+    gap:15px;
+    z-index:999;
+    min-width:320px;
+    animation:slideIn 0.4s ease;
+}
+
+.message-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#16b9a7;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.close-btn{
+    border:none;
+    background:none;
+    font-size:22px;
+    cursor:pointer;
+    margin-left:auto;
+}
+
+@keyframes slideIn{
+
+    from{
+        transform:translateX(100%);
+        opacity:0;
+    }
+
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
